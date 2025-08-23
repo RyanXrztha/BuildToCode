@@ -348,6 +348,86 @@
                 <li><strong>&lt;a&gt;</strong>: Creates hyperlinks to other pages or sections.</li>
             </ul>
 
+            <h3>Example: Using HTML Elements</h3>
+            <p>This example demonstrates a styled webpage with a header, navigation, paragraph, marquee, and footer, using the BuildToCode color scheme:</p>
+            <div class="code-block">
+<span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span>My Website<span class="tag">&lt;/title&gt;</span>
+    <span class="tag">&lt;style&gt;</span>
+        header {
+            background: #2a0944;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #9b59b6;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background: #e67e22;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        marquee {
+            background: #9b59b6;
+            color: white;
+            padding: 0.5rem;
+        }
+        footer {
+            background: #2a0944;
+            color: white;
+            padding: 0.8rem;
+            text-align: center;
+        }
+    <span class="tag">&lt;/style&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;header&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>Welcome to My Site<span class="tag">&lt;/h1&gt;</span>
+        <span class="tag">&lt;nav&gt;</span>
+            <span class="tag">&lt;a <span class="attr">href="#home"</span>&gt;</span>Home<span class="tag">&lt;/a&gt;</span> | <span class="tag">&lt;a <span class="attr">href="#about"</span>&gt;</span>About<span class="tag">&lt;/a&gt;</span>
+        <span class="tag">&lt;/nav&gt;</span>
+    <span class="tag">&lt;/header&gt;</span>
+    <span class="tag">&lt;div&gt;</span>
+        <span class="tag">&lt;p&gt;</span>This is a paragraph. <span class="tag">&lt;span <span class="attr">class="highlight"</span>&gt;</span>Highlight this text!<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;/p&gt;</span>
+        <span class="tag">&lt;p&gt;</span>Line one.<span class="tag">&lt;br&gt;</span>Line two after a break.<span class="tag">&lt;/p&gt;</span>
+        <span class="tag">&lt;marquee&gt;</span>Scroll this message!<span class="tag">&lt;/marquee&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;footer&gt;</span>
+        <span class="tag">&lt;p&gt;</span>© 2025 My Website. Contact: <span class="tag">&lt;a <span class="attr">href="mailto:info@example.com"</span>&gt;</span>info@example.com<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;/footer&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span>
+            </div>
+            <p><strong>Preview:</strong> Below is how the above code looks when rendered:</p>
+            <div class="example-preview">
+                <header>
+                    <h1>Welcome to My Site</h1>
+                    <nav>
+                        <a href="#home">Home</a> | <a href="#about">About</a>
+                    </nav>
+                </header>
+                <div>
+                    <p>This is a paragraph. <span class="highlight">Highlight this text!</span></p>
+                    <p>Line one.<br>Line two after a break.</p>
+                    <marquee>Scroll this message!</marquee>
+                </div>
+                <footer>
+                    <p>BuildToCode is an website that teaches you how learn code in an easy way. Contact: <a href="mailto:info@example.com">anything@gmail.com</a></p>
+                </footer>
+            </div>
+            <p><strong>How to Code:</strong> Save this code as <code>example.html</code> and open it in a browser. You'll see a styled header, navigation, paragraph with highlighted text, a line break, a scrolling marquee, and a footer. The <code>&lt;div&gt;</code> groups content, and <code>&lt;span&gt;</code> styles inline text using the BuildToCode theme.</p>
+
+
+            
             <h3>Advanced HTML Tips</h3>
             <ul>
                 <li>Use <code>&lt;div&gt;</code> for layout sections (e.g., containers for sliders or forms).</li>
