@@ -665,6 +665,90 @@
                 <li><strong>Flexbox/Grid:</strong> Modern layout systems for responsive designs.</li>
             </ul>
 
+            <h3>Example: Styling HTML Elements</h3>
+            <p>The slider uses a purple and orange theme with flexbox for layout and smooth transitions for slide changes.</p>
+            <div class="code-block">
+                <span class="tag">header</span> {
+                    <span class="attr">background</span>: <span class="str">linear-gradient(to right, #2a0944, #3e1f5b)</span>;
+                    <span class="attr">color</span>: <span class="str">white</span>;
+                    <span class="attr">padding</span>: <span class="str">1.5rem</span>;
+                    <span class="attr">text-align</span>: <span class="str">center</span>;
+                }
+                <span class="tag">p</span> {
+                    <span class="attr">font-size</span>: <span class="str">1.2rem</span>;
+                    <span class="attr">line-height</span>: <span class="str">1.8</span>;
+                    <span class="attr">margin</span>: <span class="str">1rem 0</span>;
+                }
+                <span class="tag">span</span> {
+                    <span class="attr">background</span>: <span class="str">#e67e22</span>;
+                    <span class="attr">padding</span>: <span class="str">2px 6px</span>;
+                    <span class="attr">border-radius</span>: <span class="str">3px</span>;
+                }
+                <span class="tag">a</span> {
+                    <span class="attr">color</span>: <span class="str">#9b59b6</span>;
+                    <span class="attr">text-decoration</span>: <span class="str">none</span>;
+                }
+                <span class="tag">a:hover</span> {
+                    <span class="attr">text-decoration</span>: <span class="str">underline</span>;
+                }
+                <span class="tag">marquee</span> {
+                    <span class="attr">background</span>: <span class="str">#9b59b6</span>;
+                    <span class="attr">color</span>: <span class="str">white</span>;
+                    <span class="attr">padding</span>: <span class="str">0.8rem</span>;
+                }
+                <span class="tag">footer</span> {
+                    <span class="attr">background</span>: <span class="str">#2a0944</span>;
+                    <span class="attr">color</span>: <span class="str">white</span>;
+                    <span class="attr">padding</span>: <span class="str">1.5rem</span>;
+                }
+            </div>
+            <p><strong>How to Code:</strong> Save this as <code>styles.css</code>, link it to your HTML with <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>, and test with the HTML example above. This styles headers, paragraphs, spans, links, marquees, and footers.</p>
+
+            <h3>Styling a Slider with CSS</h3>
+            <p>This styles the slider which has 3 slides.</p>
+            <div class="code-block">
+                <span class="tag">.slider</span> {
+                    <span class="attr">position</span>: <span class="str">relative</span>;
+                    <span class="attr">overflow</span>: <span class="str">hidden</span>;
+                    <span class="attr">border-radius</span>: <span class="str">12px</span>;
+                }
+                <span class="tag">.slides</span> {
+                    <span class="attr">display</span>: <span class="str">flex</span>;
+                    <span class="attr">transition</span>: <span class="str">transform 0.5s ease-in-out</span>;
+                }
+                <span class="tag">.slide</span> {
+                    <span class="attr">min-width</span>: <span class="str">100%</span>;
+                    <span class="attr">height</span>: <span class="str">450px</span>;
+                    <span class="attr">background-size</span>: <span class="str">cover</span>;
+                    <span class="attr">position</span>: <span class="str">relative</span>;
+                }
+                <span class="tag">.slide-caption</span> {
+                    <span class="attr">background</span>: <span class="str">rgba(155, 89, 182, 0.8)</span>;
+                    <span class="attr">color</span>: <span class="str">white</span>;
+                    <span class="attr">padding</span>: <span class="str">1rem</span>;
+                    <span class="attr">text-align</span>: <span class="str">center</span>;
+                }
+                <span class="tag">.slider-btn</span> {
+                    <span class="attr">background</span>: <span class="str">#e67e22</span>;
+                    <span class="attr">color</span>: <span class="str">white</span>;
+                    <span class="attr">border</span>: <span class="str">none</span>;
+                    <span class="attr">padding</span>: <span class="str">1rem</span>;
+                    <span class="attr">border-radius</span>: <span class="str">50%</span>;
+                }
+                <span class="tag">.slider-btn:hover</span> {
+                    <span class="attr">background</span>: <span class="str">#d35400</span>;
+                }
+            </div>
+            <p><strong>How to Code:</strong> This CSS creates a responsive slider with a purple caption background and orange buttons. JavaScript (below) handles slide navigation.</p>
+
+            <h3>Advanced CSS Tips</h3>
+            <ul>
+                <li>Use <code>flex</code> or <code>grid</code> for complex layouts like sliders or navigation bars.</li>
+                <li>Apply <code>transition</code> for smooth animations (e.g., slider movement or hover effects).</li>
+                <li>Use gradients (e.g., <code>linear-gradient</code>) for modern backgrounds.</li>
+                <li>Ensure responsive design with media queries for mobile compatibility.</li>
+            </ul>
+
         </section>
     </div>
 
