@@ -173,6 +173,33 @@
             margin-bottom: 1rem;
         }
 
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            font-family: 'Consolas', monospace;
+            font-size: 1rem;
+            line-height: 1.6;
+            white-space: pre;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .code-block .tag {
+            color: #9b59b6;
+        }
+
+        .code-block .attr {
+            color: #e67e22;
+        }
+
+        .code-block .str {
+            color: #f1c40f;
+        }
+
         marquee {
             background: #9b59b6;
             color: #fff;
@@ -180,6 +207,51 @@
             margin: 1.5rem 0;
             font-size: 1.2rem;
             border-radius: 5px;
+        }
+
+        /* Example Preview Styles */
+        .example-preview {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .example-preview header {
+            background: #2a0944;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+        }
+        .example-preview nav a {
+            color: #9b59b6;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+        .example-preview nav a:hover {
+            text-decoration: underline;
+        }
+        .example-preview .highlight {
+            background: #e67e22;
+            color: #fff;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .example-preview marquee {
+            background: #9b59b6;
+            color: #fff;
+            padding: 0.5rem;
+            margin: 1rem 0;
+        }
+        .example-preview footer {
+            background: #2a0944;
+            color: #fff;
+            padding: 0.8rem;
+            text-align: center;
+            border-radius: 0 0 5px 5px;
+            margin-top: 1rem;
         }
 
         @media (max-width: 768px) {
