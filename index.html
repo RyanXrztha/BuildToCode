@@ -72,5 +72,20 @@
             </nav>
         </div>
     </header>
+
+    <script>
+        // Smooth Scrolling and Active Link
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('href').substring(1);
+                document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+                
+                document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+
 </body>
 </html>
