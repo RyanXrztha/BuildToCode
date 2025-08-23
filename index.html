@@ -164,6 +164,20 @@
     </div>
 
     <script>
+        // Slider Functionality
+        let slideIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+
+        function moveSlide(step) {
+            slideIndex = (slideIndex + step + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+
+        // Auto-slide every 4 seconds
+        setInterval(() => moveSlide(1), 4000);
+
+
         // Smooth Scrolling and Active Link
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
