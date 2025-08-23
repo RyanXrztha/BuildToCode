@@ -750,6 +750,65 @@
             </ul>
 
         </section>
+
+        <div class="main-content">
+            <section class="section">
+                <h2>Understanding Border, Margin, and Padding</h2>
+                <p>These properties control an element's appearance and spacing. Below are examples styled with the BuildToCode theme.</p>
+
+                <h3>Simple Box Example</h3>
+                <p>This box uses a solid purple border, margin, and padding:</p>
+                <div class="a1">
+                    This is a simple box with a 2px solid purple border, 20px margin, and 15px padding.
+                </div>
+                <div class="code-block">
+<span class="tag">&lt;div <span class="attr">class="a1"</span>&gt;</span>
+    This is a simple box with a 2px solid purple border, 20px margin, and 15px padding.
+<span class="tag">&lt;/div&gt;</span>
+                </div>
+
+                <h3>Highlighted Box Example</h3>
+                <p>This box uses a dashed orange border, centered with margin, and spacious padding:</p>
+                <div class="a2">
+                    This highlighted box uses a 3px dashed orange border, 30px margin, and 20px padding.
+                </div>
+                <div class="code-block">
+<span class="tag">&lt;div <span class="attr">class="a2"</span>&gt;</span>
+    This highlighted box uses a 3px dashed orange border, 30px margin, and 20px padding.
+<span class="tag">&lt;/div&gt;</span>
+                </div>
+
+                <h3>Nested Boxes Example</h3>
+                <p>This shows how margins and padding interact between nested elements:</p>
+                <div class="a3">
+                    Outer box with a double purple border, 25px margin, and 10px padding.
+                    <div class="a4">
+                        Inner box with a solid dark purple border, 15px margin, and 12px padding.
+                    </div>
+                </div>
+                <div class="code-block">
+<span class="tag">&lt;div <span class="attr">class="a3"</span>&gt;</span>
+    Outer box with a double purple border, 25px margin, and 10px padding.
+    <span class="tag">&lt;div <span class="attr">class="a4"</span>&gt;</span>
+        Inner box with a solid dark purple border, 15px margin, and 12px padding.
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+                </div>
+
+                <h3>How to Code</h3>
+                <p>Add the CSS above to your <code>&lt;style&gt;</code> block or <code>styles.css</code> file. Then, include this HTML section in your page (e.g., after the CSS section). The examples use the BuildToCode color scheme (#2a0944, #9b59b6, #e67e22) for consistency.</p>
+
+                <h3>Tips for Using Border, Margin, and Padding</h3>
+                <ul>
+                    <li>Use <code>border</code> to define element boundaries; combine with <code>border-radius</code> for rounded edges.</li>
+                    <li>Use <code>margin: auto;</code> to center block elements horizontally.</li>
+                    <li>Apply <code>padding</code> to ensure content doesn’t touch borders, improving readability.</li>
+                    <li>Avoid excessive margins/padding to prevent cluttered layouts; test on mobile with media queries.</li>
+                    <li>Use the box model (content + padding + border + margin) to calculate total element size.</li>
+                </ul>
+            </section>
+        </div>
+
     </div>
 
     <script>
