@@ -11,6 +11,15 @@
             box-sizing: border-box;
         }
 
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f4f4f9;
+        }
+
+
         header {
             background: linear-gradient(to right, #2a0944, #3e1f5b);
             color: #fff;
@@ -207,6 +216,46 @@
             margin: 1.5rem 0;
             font-size: 1.2rem;
             border-radius: 5px;
+        }
+
+         /* Table Styles */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1.5rem 0;
+            background: #fff;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            text-align: left;
+            padding: 1rem;
+        }
+        th {
+            background: #2a0944;
+            color: #fff;
+        }
+        td {
+            background: #f4f4f9;
+        }
+        tr:nth-child(even) td {
+            background: #ecf0f1;
+        }
+        caption {
+            font-size: 1.2rem;
+            padding: 0.8rem;
+            background: #9b59b6;
+            color: #fff;
+        }
+        tfoot td {
+            background: #e67e22;
+            color: #fff;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            th, td {
+                padding: 0.5rem;
+                font-size: 1rem;
+            }
         }
 
         /* Example Preview Styles */
@@ -439,6 +488,9 @@
 
             <h3>Mastering HTML Tables</h3>
             <p>HTML tables are used to display data in a structured grid of rows and columns, ideal for presenting information like company details, schedules, or financial data. Below, we explore how to create and style tables, with examples featuring Nepali companies.</p>
+
+            <h4>How to Use HTML Tables</h4>
+            <p>Tables are created using the <code>&lt;table&gt;</code> element. Rows are defined with <code>&lt;tr&gt;</code> (table row), and cells use <code>&lt;td&gt;</code> (table data) for content or <code>&lt;th&gt;</code> for headers. Headers are typically bold and centered, used for column or row titles. Additional elements like <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>, and <code>&lt;caption&gt;</code> enhance structure and accessibility.</p>
 
             <h4>Example: Simple Tables </h4>
             <p>This table lists Nepali companies, their contacts, and locations:</p>
