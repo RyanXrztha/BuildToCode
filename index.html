@@ -520,6 +520,85 @@
             </div>
             <p><strong>How to Code:</strong> Save this as <code>nepali_table.html</code> and open it in a browser. The <code>border="1"</code> attribute adds visible borders (CSS above provides better styling). This table lists Nepali companies with their contacts and locations.</p>
             
+            <h4>Example: Advanced Table with Nepali Companies</h4>
+            <p>This table uses advanced features like <code>&lt;caption&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>, and <code>rowspan</code> to display company details with a summary:</p>
+            <table>
+                <caption>Nepali Company Directory</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Company</th>
+                        <th scope="col">Service</th>
+                        <th scope="col">Headquarters</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Nepal Telecom</td>
+                        <td>Telecommunications</td>
+                        <td>Kathmandu</td>
+                    </tr>
+                    <tr>
+                        <td>Internet Services</td>
+                        <td>Kathmandu</td>
+                    </tr>
+                    <tr>
+                        <td>Ncell</td>
+                        <td>Mobile Network</td>
+                        <td>Lalitpur</td>
+                    </tr>
+                    <tr>
+                        <td>Chaudhary Group</td>
+                        <td>Conglomerate</td>
+                        <td>Kathmandu</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Contact us for more details!</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="code-block">
+<span class="tag">&lt;table&gt;</span>
+    <span class="tag">&lt;caption&gt;</span>Nepali Company Directory<span class="tag">&lt;/caption&gt;</span>
+    <span class="tag">&lt;thead&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th <span class="attr">scope="col"</span>&gt;</span>Company<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th <span class="attr">scope="col"</span>&gt;</span>Service<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th <span class="attr">scope="col"</span>&gt;</span>Headquarters<span class="tag">&lt;/th&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/thead&gt;</span>
+    <span class="tag">&lt;tbody&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;td <span class="attr">rowspan="2"</span>&gt;</span>Nepal Telecom<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Telecommunications<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Kathmandu<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Internet Services<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Kathmandu<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Ncell<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Mobile Network<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Lalitpur<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Chaudhary Group<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Conglomerate<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Kathmandu<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/tbody&gt;</span>
+    <span class="tag">&lt;tfoot&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;td <span class="attr">colspan="3"</span>&gt;</span>Contact us for more details!<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/tfoot&gt;</span>
+<span class="tag">&lt;/table&gt;</span>
+            </div>
+            <p><strong>How to Code:</strong> Save this as <code>advanced_table.html</code> and open it in a browser. It uses <code>&lt;caption&gt;</code> for a title, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code> for structure, and <code>rowspan</code> and <code>colspan</code> for cell spanning. The <code>scope="col"</code> attribute enhances accessibility for screen readers.</p>
+
+
             <marquee behavior="scroll" direction="left">Start building tables with us today!</marquee>
         </section>
     </div>
