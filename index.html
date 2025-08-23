@@ -90,6 +90,32 @@
             font-weight: 500;
         }
 
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #e67e22;
+            color: #fff;
+            border: none;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            font-size: 1.8rem;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+
+        .slider-btn:hover {
+            background: #d35400;
+        }
+
+        .prev {
+            left: 15px;
+        }
+
+        .next {
+            right: 15px;
+        }
+
         @media (max-width: 768px) {
             .nav-container {
             flex-direction: column;
