@@ -966,6 +966,14 @@
 
     </div>
 
+    <footer style="background: linear-gradient(to right, #2a0944, #3e1f5b); color: #fff; text-align: center; padding: 20px 0; border-top: 2px solid #9b59b6; font-family: 'Roboto', Arial, sans-serif;">
+    <p>BuildToCode is a beginner-friendly website that teaches you how to code in HTML and CSS.<br>
+    Contact: <a href="tel:9841080560" style="color: #e67e22; text-decoration: none; margin: 0 10px;">9841080560</a>
+    <a href="mailto:aryanshrestha189@gmail.com" style="color: #e67e22; text-decoration: none; margin: 0 10px;">aryanshrestha189@gmail.com</a> |
+    Follow me on <a href="https://www.instagram.com/_aaryan_sht/" style="color: #9b59b6; text-decoration: none;">Instagram</a></p>
+</footer>
+
+
     <script>
         // Slider Functionality
         let slideIndex = 0;
@@ -979,6 +987,28 @@
 
         // Auto-slide every 4 seconds
         setInterval(() => moveSlide(1), 4000);
+
+
+        // Form Submission
+        function submitForm() {
+            const firstName = document.getElementById('first-name').value;
+            const lastName = document.getElementById('last-name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const formMessage = document.getElementById('form-message');
+
+            if (firstName && lastName && email && message) {
+                formMessage.textContent = `Thank you, ${firstName} ${lastName}! Your message has been sent.`;
+                formMessage.style.color = 'green';
+                document.getElementById('first-name').value = '';
+                document.getElementById('last-name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            } else {
+                formMessage.textContent = 'Please fill out all fields.';
+                formMessage.style.color = 'red';
+            }
+        }
 
 
         // Smooth Scrolling and Active Link
